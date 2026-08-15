@@ -4,102 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBAC TechTalks & TechFeira 2027</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <title>EBAC Tech Talks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./src/styles/main.scss">
 </head>
 
 <body>
-
     <header class="hero">
         <div class="container">
-            <h1 class="hero__title" data-aos="fade-down">EBAC Tech Talks</h1>
-            <p class="hero__subtitle" data-aos="fade-up">O maior evento de tecnologia e inovação acontece em
-                <strong>29/06/2027</strong>.</p>
-
-            <div class="hero__counter" data-aos="zoom-in">
-                <span id="contador">Carregando contagem...</span>
+            <img class="hero__logo" src="./src/assets/images/ebac_logo.svg" alt="EBAC">
+            <p class="hero__text">
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        29/06/2027 às 19hs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
             </div>
-
-            <br>
-            <a href="#inscreva-se" class="button">Garantir Minha Vaga</a>
         </div>
     </header>
 
-    <section class="talks">
-        <div class="container">
-            <h2 data-aos="fade-right">Programação de Palestras</h2>
-
-            <div class="talks__grid">
-                <div class="talk-card" data-aos="fade-up">
-                    <span class="talk-card__time">19:00</span>
-                    <h3>Abertura e Tendências de Tech</h3>
-                    <p>O que esperar do mercado de tecnologia nos próximos anos.</p>
-                </div>
-
-                <div class="talk-card" data-aos="fade-up" data-aos-delay="100">
-                    <span class="talk-card__time">19:45</span>
-                    <h3>Front-End Moderno</h3>
-                    <p>Práticas essenciais para iniciantes no ecossistema Web.</p>
-                </div>
-
-                <div class="talk-card" data-aos="fade-up" data-aos-delay="200">
-                    <span class="talk-card__time">20:30</span>
-                    <h3>UX/UI Design & Front-End</h3>
-                    <p>Como construir interfaces incríveis alinhando design e código.</p>
-                </div>
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">
+                    O EBAC Talks é um evento de tecnologia e para o front-end, tem como objetivo trazer conhecimento e
+                    novidades sobre o setor. Durante o evento, os participantes terão a oportunidade de aprender com
+                    especialistas da área, trocar experiências e se atualizar sobre as últimas tendências e tecnologias.
+                    Além disso, o EBAC Talks oferecerá promoções exclusivas de cursos para aqueles que desejam aprimorar
+                    suas habilidades em front-end. Não perca a chance de participar deste evento incrível e impulsionar
+                    sua carreira na área de tecnologia!
+                </p>
             </div>
+            <img class="event__image" src="./src/assets/images/frontend.png" alt="front-end">
         </div>
     </section>
 
-    <section class="speakers">
-        <div class="container">
-            <h2 data-aos="fade-left">Palestrantes Convidados</h2>
-
-            <div class="speakers__grid">
-                <div class="speaker-card" data-aos="flip-left">
-                    <div class="speaker-card__avatar">👨‍💻</div>
-                    <h3>Ana Silva</h3>
-                    <p>Senior Front-End Engineer</p>
-                </div>
-
-                <div class="speaker-card" data-aos="flip-left" data-aos-delay="200">
-                    <div class="speaker-card__avatar">👩‍💻</div>
-                    <h3>Carlos Souza</h3>
-                    <p>Lead Tech Recruiter</p>
-                </div>
-
-                <div class="speaker-card" data-aos="flip-left" data-aos-delay="400">
-                    <div class="speaker-card__avatar">🚀</div>
-                    <h3>Mariana Costa</h3>
-                    <p>Product Designer & Mentor</p>
-                </div>
+    <section class="event event--ux-ui event--image-left">
+        <div class="container" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+            <div class="event__details">
+                <h2 class="event__details__title">UX / UI</h2>
+                <p class="event__details__description">
+                    O EBAC Talks é um evento de tecnologia com foco em design UX/UI, que tem como objetivo trazer
+                    conhecimento e novidades sobre o setor. Durante o evento, os participantes terão a oportunidade de
+                    aprender com especialistas da área, trocar experiências e se atualizar sobre as últimas tendências e
+                    tecnologias. Além do design UX/UI, o evento também abordará outras áreas relacionadas, oferecendo
+                    uma visão ampla e abrangente do setor. O EBAC Talks oferecerá promoções exclusivas de cursos para
+                    aqueles que desejam aprimorar suas habilidades em design UX/UI. Não perca a chance de participar
+                    deste evento incrível e impulsionar sua carreira na área de tecnologia!
+                </p>
             </div>
+            <img class="event__image" src="./src/assets/images/ui-ux.png" alt="ui-ux">
         </div>
     </section>
 
-    <!-- FORMULÁRIO DE INSCRIÇÃO -->
-    <section id="inscreva-se" class="signup">
-        <div class="container" data-aos="zoom-in">
-            <h2>Faça sua Inscrição Gratuita</h2>
-            <p>Evento online e ao vivo no dia 29/06/2027.</p>
-
-            <form class="signup__form" id="form-cadastro">
-                <input type="text" placeholder="Seu nome completo" required />
-                <input type="email" placeholder="Seu melhor e-mail" required />
-                <button type="submit" class="button">Confirmar Presença</button>
-            </form>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    O EBAC Talks é um evento de tecnologia com foco em Data Science, que tem como objetivo trazer
+                    conhecimento e novidades sobre o setor. Durante o evento, os participantes terão a oportunidade de
+                    aprender com especialistas da área, trocar experiências e se atualizar sobre as últimas tendências e
+                    tecnologias. O evento abordará temas como análise de dados, aprendizado de máquina e inteligência
+                    artificial, oferecendo uma visão ampla e abrangente do setor. O EBAC Talks oferecerá promoções
+                    exclusivas de cursos para aqueles que desejam aprimorar suas habilidades em Data Science. Não perca
+                    a chance de participar deste evento incrível e impulsionar sua carreira na área de tecnologia!
+                </p>
+            </div>
+            <img class="event__image" src="./src/assets/images/data.png" alt="data-science">
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2027 EBAC Tech Talks. Projeto desenvolvido para o curso de Front-End - Priscila Durão.</p>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-end</h2>
+                <p class="event__details__description">
+                    O EBAC Talks é um evento de tecnologia com foco em back-end, que tem como objetivo trazer
+                    conhecimento e novidades sobre o setor. Durante o evento, os participantes terão a oportunidade de
+                    aprender com especialistas da área, trocar experiências e se atualizar sobre as últimas tendências e
+                    tecnologias. O evento abordará temas como desenvolvimento de APIs, bancos de dados e arquitetura de
+                    sistemas, oferecendo uma visão ampla e abrangente do setor. O EBAC Talks oferecerá promoções
+                    exclusivas de cursos para aqueles que desejam aprimorar suas habilidades em back-end. Não perca a
+                    chance de participar deste evento incrível e impulsionar sua carreira na área de tecnologia!
+                </p>
+            </div>
+            <img class="event__image" src="./src/assets/images/backend.png" alt="back-end">
         </div>
-    </footer>
+    </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="./src/scripts/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  color: #fff;
+  background-color: #180f2a;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button {
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color .3s, transform .2s;
+  display: inline-block;
+}
+
+.button--primary {
+  color: #fff;
+  background-color: #e11d48;
+}
+
+.button--primary:hover {
+  background-color: #e64065;
+  transform: translateY(-2px);
+}
+
+.hero {
+  text-align: center;
+  background-color: #201335;
+  border-bottom: 1px solid #ffffff0d;
+  padding: 60px 0 80px;
+}
+
+.hero__logo {
+  max-width: 160px;
+  margin-bottom: 24px;
+}
+
+.hero__text {
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.hero__text span {
+  color: #00d2ff;
+  display: inline-block;
+}
+
+.infos-bar {
+  background-color: #180f2a;
+  border: 1px solid #ffffff1a;
+  border-radius: 12px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 32px;
+  display: flex;
+}
+
+.infos-bar__infos {
+  text-align: left;
+  gap: 30px;
+  list-style: none;
+  display: flex;
+}
+
+.infos-bar__infos__item {
+  color: #a1a1aa;
+  font-size: .9rem;
+}
+
+.infos-bar__infos__item b {
+  color: #fff;
+  margin-bottom: 4px;
+  font-size: 1rem;
+  display: block;
+}
+
+.event {
+  padding: 80px 0;
+}
+
+.event .container {
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  display: flex;
+}
+
+.event__details {
+  max-width: 520px;
+}
+
+.event__details__title {
+  color: #00d2ff;
+  margin-bottom: 16px;
+  font-size: 2.2rem;
+}
+
+.event__details__description {
+  color: #a1a1aa;
+  text-align: justify;
+  font-size: .95rem;
+}
+
+.event__image {
+  object-fit: cover;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 360px;
+}
+
+.event--image-left .container {
+  flex-direction: row-reverse;
+}
+
+.event--ux-ui .event__details__title {
+  color: #e11d48;
+}
+
+.event--data-science .event__details__title {
+  color: #10b981;
+}
+
+.event--backend .event__details__title {
+  color: #f59e0b;
+}
+
+@media (width <= 768px) {
+  .infos-bar {
+    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .infos-bar__infos {
+    text-align: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .event {
+    padding: 40px 0;
+  }
+
+  .event .container {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  .event--image-left .container {
+    flex-direction: column-reverse;
+  }
+
+  .event__details {
+    max-width: 100%;
+  }
+
+  .event__details__description {
+    text-align: left;
+  }
+
+  .event__image {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=EBAC-Tech-Talks.971c2ea4.css.map */

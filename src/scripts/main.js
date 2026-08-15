@@ -28,16 +28,8 @@ const contaAsHoras = setInterval(function () {
 
   if (distanciaAteOEvento < 0) {
     clearInterval(contaAsHoras);
-    elementoContador.innerHTML = "O evento já começou!";
+    elementoContador.innerHTML = "Evento expirado";
   } else {
     elementoContador.innerHTML = `${diasAteOEvento}d ${horasAteOEvento}h ${minutosAteOEvento}m ${segundosAteOEvento}s`;
   }
 }, 1000);
-
-document
-  .getElementById("form-cadastro")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Inscrição confirmada para o EBAC Tech Talks (29/06/2027)!");
-    this.reset();
-  });
